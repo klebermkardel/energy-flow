@@ -11,15 +11,15 @@
         <h2>EnergyFlow - Seu controle de produtividade</h2>
 
         <div class="controls">
-            <label>Tempo (seg): </label>
-            <input type="number" id="input-time" value="30" min="1">
+            <label>Tempo (ex: 1h30 ou 90): </label>
+            <input type="text" id="input-time" placeholder="1h30min"    style="width: 100px;">
             <button onclick="startSystem()">Iniciar</button>
         </div>
 
         <div class="energy-wrapper">
             <div class="status-text">
                 <span>Status da Célula</span>
-                <span id="percentage-text">100%</span>
+                <span id="percent-text">100%</span>
             </div>
             <div class="progress-container">
                 <div id="energy-bar"></div>
@@ -28,5 +28,7 @@
 
         <div id="timer-display">00:00</div>
     </div>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
