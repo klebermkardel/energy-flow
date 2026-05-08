@@ -61,3 +61,94 @@ table {
     --font-main: 'Courier New', Courier, monospace;
 }
 
+body {
+    background-color: var(--bg-color);
+    color: var(--tech-blue);
+    font-family: var(--font-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.container {
+    background-color: var(--panel-bg);
+    padding: 2rem;
+    border: 1px solid var(--tech-blue);
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+/* Controles */
+
+.controls {
+    margin-bottom: 2rem;
+}
+
+input {
+    background: transparent;
+    border: 1px solid var(--tech-blue);
+    color: var(--tech-blue);
+    padding: 8px;
+    width: 60px;
+    text-align: center;
+    outline: none;
+}
+
+button {
+    background: var(--tech-blue);
+    color: black;
+    border: none;
+    padding: 8px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.8s;
+    box-shadow: 0 0 10px var(--tech-blue);
+}
+
+/* Barra de energia */
+
+.energy-wrapper {
+    margin: 20px 0;
+}
+
+.progress-container {
+    background: #222;
+    height: 30px;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #444;
+}
+
+#energy-bar {
+    height: 100%;
+    width: 100%;
+    background-color: var(--energy-high);
+    transition: width 0.1s linear, background-color 0.5s ease;
+}
+
+.status-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+#timer-display {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
